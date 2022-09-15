@@ -1,3 +1,14 @@
+import { Suspense } from "react";
+
+import FeaturedCollections from "../components/FeaturedCollections.server";
+import { Layout } from "../components/Layout.server";
+
 export default function Home() {
-  return <div className="font-extrabold mb-4 text-5xl md:text-7xl">Hello World!!</div>;
+  return (
+    <Layout>
+      <Suspense>
+        <FeaturedCollections />
+      </Suspense>
+    </Layout>
+  );
 }
