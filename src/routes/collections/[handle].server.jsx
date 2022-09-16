@@ -24,10 +24,10 @@ import {
     });
   
     useServerAnalytics({
-      shopify: {
-        pageType: ShopifyAnalyticsConstants.pageType.collection,
-        resourceId: collection.id,
-      },
+        shopify: {
+          pageType: ShopifyAnalyticsConstants.pageType.collection,
+          resourceId: collection.id,
+        },
     });
   
     return (
